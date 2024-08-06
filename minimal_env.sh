@@ -20,13 +20,6 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-yay_packages=(
-    visual-studio-code-bin
-    vesktop-bin
-)
-
-sudo yay -S "${yay_packages[@]}"
-
 sudo systemctl enable sddm
 
 sudo reboot now
